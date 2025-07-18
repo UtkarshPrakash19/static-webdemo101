@@ -2,23 +2,111 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Static Site - AWS CodePipeline Demo *BOTTOMLINE*</title>
+    <title>🚀 Utkarsh's Static Site - CI/CD Pipeline Demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f9fbfd;
+            color: #2c3e50;
+        }
+        header {
+            background: linear-gradient(90deg, #004080, #0066cc);
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        header p {
+            margin: 8px 0 0;
+            font-size: 1.1rem;
+        }
+        main {
+            padding: 50px 20px;
+            text-align: center;
+        }
+        main h2 {
+            color: #0066cc;
+            margin-bottom: 20px;
+        }
+        main p {
+            font-size: 1.1rem;
+            max-width: 700px;
+            margin: 0 auto 20px;
+        }
+        .badge {
+            display: inline-block;
+            background-color: #e0f7e9;
+            color: #27ae60;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-weight: bold;
+            font-size: 1rem;
+            margin-top: 10px;
+        }
+        .info-grid {
+            margin-top: 40px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+        }
+        .info-card {
+            background-color: white;
+            border: 1px solid #dde5ed;
+            border-radius: 12px;
+            padding: 20px;
+            width: 280px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+        }
+        .info-card h3 {
+            color: #004080;
+            margin-bottom: 10px;
+        }
+        footer {
+            background-color: #f1f3f6;
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9rem;
+            color: #7f8c8d;
+        }
+    </style>
 </head>
-<body style="margin: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #f4f7fa; color: #333;">
+<body>
 
-    <header style="background-color: #004080; color: white; padding: 20px 0; text-align: center;">
-        <h1 style="margin: 0;">🚀 Welcome to Our Website!</h1>
-        <p style="margin: 5px 0 0;">Deployed using AWS CodePipeline & GitHub</p>
+    <header>
+        <h1>🚀 Welcome to Utkarsh's Deployment Demo</h1>
+        <p>CI/CD Static Site using <strong>GitHub + Jenkins + AWS CodePipeline</strong></p>
     </header>
 
-    <main style="padding: 40px 10px; text-align: center;">
-        <p style="font-size: 1.2em;">This is a simple, clean and responsive static website deployed through CI/CD pipeline.</p>
-        <h2 style="color: #0066cc;">🌐 Website Version: <span style="color: green;">2.0</span> (GitHub Deployment)</h2>
-        <p style="margin-top: 30px; font-size: 0.9em; color: #666;">Built with ❤️ using AWS S3, Jenkins & CodePipeline</p>
+    <main>
+        <h2>🌐 Live Site Version: <span class="badge">2.0 - GitHub Automated</span></h2>
+        <p>This modern static website is auto-deployed on every commit using a secure and efficient CI/CD pipeline built on Jenkins, GitHub, and AWS S3 via CodePipeline.</p>
+        <div class="info-grid">
+            <div class="info-card">
+                <h3>🛠️ Tech Stack</h3>
+                <p>HTML, Jenkins, GitHub, AWS S3, CodePipeline, IAM Roles</p>
+            </div>
+            <div class="info-card">
+                <h3>🔒 Security</h3>
+                <p>Secrets are handled with IAM Roles. No credentials exposed in code or pipeline.</p>
+            </div>
+            <div class="info-card">
+                <h3>📦 Deployment Type</h3>
+                <p>Static Hosting with version-controlled code. Each push = new version live!</p>
+            </div>
+        </div>
     </main>
 
-    <footer style="background-color: #eaeaea; text-align: center; padding: 15px; font-size: 0.85em; color: #555;">
-        © 2025 Utkarsh Static Site Demo | All Rights Reserved
+    <footer>
+        © 2025 Utkarsh Prakash | Static Site CI/CD Demo | Built with 💙 in India
     </footer>
 
 </body>
